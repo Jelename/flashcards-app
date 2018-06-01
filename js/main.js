@@ -32,7 +32,7 @@ function showCardQuestion() {
   //let questionTime = true;
   let changeSide = document.getElementById('card');
   changeSide.onclick = function(event) {
-    console.log('clicked');
+    cardHolderDiv.replaceChild(answerHolder, questionHolder);
   }
 
   //.addEventListener('onclick', clicked);
