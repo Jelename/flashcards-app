@@ -21,3 +21,7 @@ h1 {
   width: 500px;
   height: 80px;
 }
+
+#loadQuestion {
+  padding-top: 40px;
+}
