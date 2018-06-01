@@ -11,10 +11,8 @@ function submit() {
   let newQuestion = document.getElementById('newQuestion').value;
   document.getElementById('newQuestion').value = null;
 
-
   let newAnswer = document.getElementById('newAnswer').value;
   document.getElementById('newAnswer').value = null;
-  
 
   let newCard = {
     question: newQuestion,
@@ -23,6 +21,20 @@ function submit() {
 
   flashCards.push(newCard);
   console.log(flashCards);
+}
+
+function showCardQuestion() {
+  let currentCard = flashCards[Math.floor(Math.random() * flashCards.length)];
+  let questionHolder = document.getElementById('loadQuestion');
+  questionHolder.appendChild(currentCard);
+  console.log(questionHolder);
 
 
+
+//   // create a new div element
+// var newDiv = document.createElement("div"); 
+// // and give it some content
+// var newContent = document.createTextNode("Hi there and greetings!");
+// // add the text node to the newly created div
+// newDiv.appendChild(newContent);
 }
