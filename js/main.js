@@ -10,9 +10,19 @@ let flashCards = [
 function submit() {
   let newQuestion = document.getElementById('newQuestion').value;
   document.getElementById('newQuestion').value = null;
-  console.log(newQuestion);
+
 
   let newAnswer = document.getElementById('newAnswer').value;
   document.getElementById('newAnswer').value = null;
-  console.log(newAnswer);
+  
+
+  let newCard = {
+    question: newQuestion,
+    answer: newAnswer
+  }
+
+  flashCards.push(newCard);
+  console.log(flashCards);
+
+
 }
