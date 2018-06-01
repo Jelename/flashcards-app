@@ -28,26 +28,15 @@ function showCardQuestion() {
   let cardHolderDiv = document.getElementById('loadQuestion')
   let questionHolder = document.createTextNode(`${currentCard.question}`);
   let answerHolder = document.createTextNode(`${currentCard.answer}`);
+  cardHolderDiv.appendChild(questionHolder);
 
-  //let questionTime = true;
+  //changing an question to an answer
   let changeSide = document.getElementById('card');
   changeSide.onclick = function(event) {
     cardHolderDiv.replaceChild(answerHolder, questionHolder);
   }
-
-  //.addEventListener('onclick', clicked);
-  //clickedCard.setAttribute('onclick', console.log('questionTime'));
-
-//if else
-  cardHolderDiv.appendChild(questionHolder);
-
-  //console.log(questionHolder);
-  console.log(cardHolderDiv);
 }
 
-function clicked() {
-
-}
 
 
 
