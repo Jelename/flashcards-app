@@ -1,9 +1,18 @@
 * {
   margin: 0;
   padding: 0;
+  text-align: center;;
 }
 
 h1 {
   font-family: helvetica, sans-serif;
   font-size: 48px;
+}
+
+#card {
+  width: 500px;
+  height: 100px;
+  background-color: gray;
+  margin: auto;
+  color:white;
 }
