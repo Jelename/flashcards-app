@@ -25,14 +25,17 @@ function submit() {
 
 function showCardQuestion() {
   let currentCard = flashCards[Math.floor(Math.random() * flashCards.length)];
-  let questionHolder = document.getElementById('loadQuestion');
-  questionHolder.appendChild(currentCard);
-  console.log(questionHolder);
+  let cardHolderDiv = document.getElementById('loadQuestion')
+  let questionHolder = document.createTextNode(`${currentCard.question}`);
+  cardHolderDiv.appendChild(questionHolder);
+
+  //console.log(questionHolder);
+  console.log(cardHolderDiv);
 
 
 
 //   // create a new div element
-// var newDiv = document.createElement("div"); 
+// var newDiv = document.createElement("div");
 // // and give it some content
 // var newContent = document.createTextNode("Hi there and greetings!");
 // // add the text node to the newly created div
