@@ -27,17 +27,47 @@ function showCardQuestion() {
   let currentCard = flashCards[Math.floor(Math.random() * flashCards.length)];
   let cardHolderDiv = document.getElementById('loadQuestion')
   let questionHolder = document.createTextNode(`${currentCard.question}`);
+  let answerHolder = document.createTextNode(`${currentCard.answer}`);
+
+  //let questionTime = true;
+  let changeSide = document.getElementById('card');
+  changeSide.onclick = function(event) {
+    console.log('clicked');
+  }
+
+  //.addEventListener('onclick', clicked);
+  //clickedCard.setAttribute('onclick', console.log('questionTime'));
+
+//if else
   cardHolderDiv.appendChild(questionHolder);
 
   //console.log(questionHolder);
   console.log(cardHolderDiv);
-
-
-
-//   // create a new div element
-// var newDiv = document.createElement("div");
-// // and give it some content
-// var newContent = document.createTextNode("Hi there and greetings!");
-// // add the text node to the newly created div
-// newDiv.appendChild(newContent);
 }
+
+function clicked() {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//68
